@@ -1,0 +1,21 @@
+<template>
+    <div style="height: 300px;">
+        <lightning-datatable
+                key-field="id"
+                data={data}
+                columns={columns}
+                >
+        </lightning-datatable>
+    </div>   
+    <lightning-button 
+   type="submit" 
+   variant="brand" 
+   label="Save" 
+   class="stretchButton slds-p-top_x-small" onclick={handleSave}></lightning-button>
+     <lightning-button 
+   type="submit" 
+   variant="destructive" 
+   label="Delete From Database" 
+   class="stretchButton slds-p-top_x-small" onclick={handleDelete}></lightning-button> 
+
+</template>
